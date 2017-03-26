@@ -1,0 +1,522 @@
+@import 'fonts';
+@import 'colors';
+
+@media (max-width: 991px) {
+
+  .about {
+
+    .section-header {
+      background-image: url(../img/bg-about.jpg);
+      background-size: auto 175%;
+
+      .hdr {
+        margin: 2.4rem 10%;
+      }
+    }
+  }
+
+  .project {
+
+    .section-sub {
+
+      .container {
+        display: block;
+        width: 100%;
+
+        &.more-container {
+          border-top: 1px solid $gray-mid;
+          margin-top: 3rem;
+          padding-top: 3rem;
+          width: 100%;
+
+          .project-list {
+
+            .project-item {
+
+              .link {
+                background: none;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .btn {
+    border-width: 1px;
+  }
+
+  .pag {
+    bottom: 4rem;
+  }
+
+  .nav-main {
+    padding: 1rem 2rem;
+
+    .link-list {
+      display: none;
+    }
+
+    .btn-menu {
+      background-position: -721px -32px;
+      display: inline-block;
+      float: right;
+      height: 40px;
+      pointer-events: auto;
+      width: 40px;
+    }
+
+    &.active {
+      background: rgba($white, .85);
+
+      .link-list {
+        background: rgba($white, .85);
+        display: block;
+        float: none;
+        left: 0;
+        padding: 1rem 2rem;
+        position: absolute;
+        text-align: right;
+        top: 6rem;
+        width: 100%;
+
+        .link-item {
+          display: block;
+          margin: 0;
+
+          .link {
+            display: block;
+          }
+        }
+      }
+
+      .link {
+        color: $gray-darker;
+
+        .logo-path {
+          fill: $gray-darker;
+        }
+      }
+    }
+  }
+
+  .home {
+
+    .nav-main {
+
+      .btn-menu {
+        background-position: -621px -32px;
+      }
+
+      &.active {
+
+        .link-list {
+          padding-top: 0;
+        }
+
+        .btn-menu {
+          background-position: -721px -32px;
+        }
+      }
+    }
+
+    .section,
+    .project {
+
+      .hdr,
+      .hdr-sub {
+        margin: 0 auto;
+      }
+
+      .hdr {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        margin: 0 5%;
+      }
+
+      .hdr-sub {
+        font-size: 1.6rem;
+        line-height: initial;
+      }
+
+      .btn-down {
+        display: none;
+      }
+    }
+
+    .section-main {
+      background-image: url(../img/mobile/bg-home.jpg);
+      padding: 6rem 1rem;
+
+      .hdr {
+        font-size: 4.8rem;
+        line-height: 6rem;
+        margin: 0;
+      }
+
+      .video {
+        display: none;
+      }
+    }
+
+    .section-about {
+      background-image: url(../img/mobile/bg-about.jpg);
+      background-size: auto 150%;
+    }
+
+    .section-projects {
+
+      .project-01 {
+        background-image: url(../img/mobile/bg-project-ocearch.jpg);
+      }
+
+      .project-02 {
+        background-image: url(../img/mobile/bg-project-carmageddon.jpg);
+      }
+
+      .project-03 {
+        background-image: url(../img/mobile/bg-project-claudiaendler.jpg);
+      }
+    }
+
+    .section-contact {
+      background-image: url(../img/mobile/bg-home-contact.jpg);
+
+      .form {
+        margin: 0 auto;
+        width: 75%;
+      }
+    }
+  }
+
+  .about {
+
+    .section-header {
+      background-image: url(../img/mobile/bg-about.jpg);
+
+      .hdr {
+        margin: 2rem 1rem;
+      }
+    }
+
+    .section-sub {
+      padding: 4rem 2rem;
+
+      .hdr,
+      .container {
+        display: block;
+        margin-bottom: 1.4rem;
+        text-align: center;
+        width: 100%;
+      }
+
+      .container {
+        padding: 0;
+        position: static;
+        text-align: left;
+
+        &.bg {
+          display: none;
+        }
+
+        &.img {
+          padding: 0;
+
+          + .container {
+            width: 100%;
+
+            .hdr {
+              margin: 0;
+
+              + .desc {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-quotes {
+
+      .quote {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 8rem 2rem;
+
+        .text {
+
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+
+    .hdr {
+      background: $gray-lighter;
+      color: $gray-darker;
+      display: block;
+      font-family: $font-light;
+      font-size: 2.4rem;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .project-item {
+      padding-top: 60%;
+      width: 100%;
+
+      .link {
+        background: none;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project {
+
+    .section-video {
+
+      .btn-play {
+        display: none;
+      }
+    }
+
+    .section-sub {
+      padding: 2rem;
+
+      .container {
+
+        .hdr {
+          font-size: 2.6rem;
+        }
+
+        &.more-container {
+          margin-top: 2rem;
+          padding-top: 2rem;
+
+          .project-list {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+
+    .section-contact {
+      background-image: url(../img/mobile/bg-contact.jpg);
+
+      .hdr {
+        font-size: 2.6rem;
+      }
+
+      .form {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+
+  .client,
+  .admin {
+
+    .section-client {
+
+      .form {
+        width: 100%;
+      }
+    }
+
+    .section-grid {
+
+      .hdr {
+        font-size: 2.4rem;
+        padding: 4rem 6rem 2rem 2rem;
+
+        .crumb {
+          font-size: 1.6rem;
+
+          &:before {
+            font-size: 1rem;
+          }
+
+          &:first-child {
+            font-size: 2.4rem;
+          }
+        }
+      }
+
+      .directory-item {
+
+        .btn-file {
+          padding: 2rem;
+
+          .btn-download {
+            background: url(../img/sprites.svg) no-repeat transparent;
+            background-position: -106px -58px;
+            background-size: 500px auto;
+            border: 0 none;
+            opacity: 1;
+            font-size: 0;
+            height: 40px;
+            padding: 0;
+            right: 1rem;
+            width: 40px;
+          }
+        }
+      }
+
+      .directory-add {
+        transform: translateY(10rem);
+
+        &.active {
+          display: block;
+        }
+
+        .btn-upload {
+          display: block;
+          margin: 2rem auto;
+          width: 60%;
+        }
+      }
+
+      .file-preview {
+        padding: 2rem 2rem 6rem;
+
+        .btn-download {
+          background: url(../img/sprites.svg) no-repeat transparent;
+          background-position: -106px -58px;
+          background-size: 500px auto;
+          border: 0 none;
+          font-size: 0;
+          height: 40px;
+          padding: 0;
+          position: absolute;
+          right: 1rem;
+          top: -5.2rem;
+          width: 40px;
+        }
+      }
+
+      .btn-add {
+        right: 2rem;
+        top: 5.8rem;
+      }
+
+      .form {
+        width: calc(100% - 4rem);
+      }
+    }
+  }
+
+  .admin {
+
+    .section-grid {
+
+      .btn-logout {
+        position: relative;
+        top: -.6rem;
+      }
+
+      .sub-hdr {
+        font-size: 2rem;
+      }
+
+      .form,
+      .client-container {
+        margin-left: 2rem;
+      }
+
+      .client-container {
+        width: calc(100% - 4rem);
+
+        .client-table {
+
+          th {
+            font-size: 1.4rem;
+          }
+
+          td {
+            font-size: 1.4rem;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .form {
+
+    .textarea {
+      height: 6rem;
+    }
+
+    .btn-submit ~ .message {
+      display: block;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  .section {
+    padding: 6rem 2rem;
+  }
+
+  .home {
+
+    .section,
+    .project {
+
+      .hdr {
+        font-size: 2.2rem;
+        line-height: 3rem;
+      }
+
+      .hdr-sub {
+        font-size: 1.8rem;
+      }
+    }
+
+    .section-main {
+
+      .hdr {
+        font-size: 3rem;
+        line-height: 4.2rem;
+      }
+
+      .hdr-sub {
+        font-size: 1.4rem;
+      }
+    }
+
+    .section-contact {
+      background-position: 25% -2rem;
+
+      .form {
+        width: 90%;
+      }
+    }
+  }
+
+}
