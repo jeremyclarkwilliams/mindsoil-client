@@ -3,6 +3,7 @@
 Exploration into using React, AJAX, and PHP for:
 - Admin Panel to add client directories, disable directories, reset passwords, and links to view client assets
 - Client Panel to navigate directory, create folders, add files, preview files, and download all files as ZIP
+- **Note: Uses older React syntax and incorporates jQuery**
 
 ### Admin - Login:
 ![Admin Login](/_screenshots/admin-login.png?raw=true "Admin Login")
